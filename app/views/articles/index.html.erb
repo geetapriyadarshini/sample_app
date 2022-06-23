@@ -1,0 +1,8 @@
+<h2>This is ruby</h2>
+<ul>
+	<%@articles.each do |art|%>
+		<li><%=art.title%></li>
+		<li><%=art.body%></li>
+	<%end%>
+</ul>
+<%= link_to "New Article",new_article_path, method: :get%>

@@ -1,0 +1,10 @@
+<h2>This is ruby</h2>
+
+<ol>
+	<% @posts.each do |pos| %>
+		<li>	
+		<%= pos.title %>
+		</li>
+		<%= pos.body%>
+	<%end%>
+</ol>
